@@ -1,0 +1,42 @@
+# Source allowlist: captures, reports, archives and local settings stay private.
+# Add an explicit exception when introducing a new publishable file/directory.
+/*
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/LICENSE
+!/ForeverState.lua
+!/ForeverState.toc
+!/Analyze.ps1
+!/analysis/
+!/tests/
+
+/analysis/*
+!/analysis/*.py
+!/analysis/README.md
+/tests/*
+!/tests/*.py
+!/tests/*.lua
+
+# Defense in depth if the source allowlist is expanded later.
+analysis-data/
+experiments/
+Logs/
+WTF/
+SavedVariables/
+*.saved.lua
+*.lua.bak
+*.sqlite3*
+*.db
+*.gz
+*.zip
+__pycache__/
+*.py[cod]
+.venv/
+.python-path
+.env
+.env.*
+
+# Explicitly share these logs.
+!/raw-logs/
+!/raw-logs/**

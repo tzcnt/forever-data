@@ -1,0 +1,7 @@
+## Interface: 16001
+## Title: Forever State
+## Notes: Timestamped level, gear, stats and stance history for offline combat-log analysis. /fstate status
+## Author: tzcnt
+## Version: 0.2.1
+## SavedVariablesPerCharacter: ForeverStateDB
+ForeverState.lua
